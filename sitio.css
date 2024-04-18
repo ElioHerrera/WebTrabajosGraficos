@@ -114,6 +114,21 @@ a:hover {
     color: #202020
 }
 
+.image-container {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    width: 100%; /* Ajusta el ancho según tus necesidades */
+    max-width: 1200px; /* Ajusta el ancho máximo según tus necesidades */
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
+    text-align: center; /* Centra la imagen dentro del contenedor */
+}
+
+.image-container img {
+    width: 100%; /* Hace que la imagen ocupe todo el ancho del contenedor */
+    height: auto; /* Permite que la altura de la imagen se ajuste automáticamente */
+    display: block; /* Evita el espacio adicional debajo de la imagen */
+}
+
 .clear {
     clear: both;
     height: 1px;
@@ -1416,7 +1431,7 @@ footer small {
     top: 50%;
     left: 50%;
     z-index: -100;
-    width: auto;
+    width: 1600px;
     height: auto;
     min-width: 100%;
     min-height: 100%;
