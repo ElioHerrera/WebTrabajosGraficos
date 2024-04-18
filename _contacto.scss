@@ -1,0 +1,273 @@
+section.contacto {
+    position: relative;
+    z-index: 4;
+    width: 100%;
+    padding: 0 0 30px;
+    border-bottom: 34px solid #202020;
+    background: #fff;
+}
+
+section.contacto h2 {
+    min-width: 320px;
+    padding-bottom: 35px;
+    font-family: "ProximaNovaExtraBold", sans-serif;
+    font-size: 120px;
+    font-weight: normal;
+    text-align: center;
+    color: #202020;
+    @media (max-width: 800px) {
+        font-size: 55px;
+        line-height: 60px;
+    }
+}
+
+section.contacto h3 {
+    padding-bottom: 5px;
+    margin: 0;
+    font-family: "ProximaNovaExtraBold", sans-serif;
+    font-size: 27px;
+    font-weight: normal;
+    color: #202020;
+}
+
+section.contacto p {
+    padding: 0;
+    font-family: "ProximaNova", sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    color: #555;
+}
+
+section.contacto .grid {
+    width: 100%;
+    max-width: 1140px;
+    min-width: 320px;
+    padding: 0 15px;
+    margin: 0 auto;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+section.contacto .grid .cell {
+    float: left;
+    width: 28%;
+    padding: 0;
+    padding-bottom: 20px;
+}
+
+section.contacto .grid .cell.form {
+    width: 43%;
+}
+
+section.contacto .grid .cell.form h2 {
+    position: relative;
+    padding-left: 20px;
+}
+
+section.contacto .grid .cell.form h2:before {
+    position: absolute;
+    top: 14px;
+    left: 0;
+    font-family: EllecktraIconos;
+    font-size: 16px;
+    content: "\F102";
+}
+
+section.contacto .grid .cell.form form {
+    padding-top: 10px;
+}
+
+section.contacto .grid .cell.form input {
+    width: 100%;
+    height: 35px;
+    padding: 10px 0;
+    margin-bottom: 10px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: "ProximaNova", sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    color: #555;
+    border: 0;
+    border-bottom: 1px solid #202020;
+    border-radius: 0;
+    outline: 0;
+}
+
+section.contacto .grid .cell.form textarea {
+    width: 100%;
+    height: 175px;
+    padding: 10px;
+    margin-bottom: 10px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: "ProximaNova", sans-serif;
+    font-size: 15px;
+    border: 1px solid #202020;
+    border-radius: 0;
+}
+
+section.contacto .grid .cell.form button {
+    height: 40px;
+    padding: 10px 20px;
+    font-family: "ProximaNovabold", "Verdana", sans-serif;
+    letter-spacing: .25px;
+    text-transform: uppercase;
+    color: #fff;
+    border: 0;
+    border-radius: 0;
+    background: #202020;
+}
+
+section.contacto .grid .cell.form button:disabled {
+    cursor: default;
+    background: #eee;
+}
+
+section.contacto .grid .cell.form .file {
+    position: relative;
+    width: 100%;
+    height: 35px;
+    padding: 0;
+    margin-bottom: 10px;
+    clear: both;
+    border-bottom: 1px solid #202020;
+    background: #fff url(data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgNDQgNDQiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDQ0IDQ0OyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+PHBhdGggc3R5bGU9ImZpbGw6IzAwMDAwMCIgZD0iTTIxLjIsMTAuMmwtMy44LTMuOGMtMC41LTAuNS0xLjMtMC44LTItMC44SDIuOUMxLjMsNS41LDAsNi44LDAsOC40djI3LjNjMCwxLjYsMS4zLDIuOSwyLjksMi45aDM4LjNjMS42LDAsMi45LTEuMywyLjktMi45VjEzLjljMC0xLjYtMS4zLTIuOS0yLjktMi45SDIzLjJDMjIuNCwxMSwyMS43LDEwLjcsMjEuMiwxMC4yeiIvPjwvc3ZnPg==) no-repeat 2px 4px;
+    background-size: 24px 24px;
+}
+
+section.contacto .grid .cell.form .file .label {
+    position: absolute;
+    top: 10px;
+    left: 40px;
+    z-index: 1;
+    font-family: "Verdana", sans-serif;
+    font-size: 13px;
+    color: #777;
+}
+
+section.contacto .grid .cell.form .file input {
+    position: absolute;
+    z-index: 2;
+    cursor: pointer;
+    opacity: 0;
+}
+
+section.contacto .grid .cell.form form {
+    overflow: hidden;
+    -webkit-transition: height 1s ease;
+    transition: height 1s ease;
+}
+
+section.contacto .grid .cell.form .contacto {
+    height: 400px;
+}
+
+section.contacto .grid .cell p a{
+    color:#555;
+    font-size:14px;
+    font-family: inherit;
+}
+section.contacto .grid .cell.form .curriculum {
+    height: 445px;
+}
+
+section.contacto .grid .cell.form form.hidden {
+    height: 0;
+}
+img.btn-whatsapp {
+    display: block !important;
+    position: fixed;
+    z-index: 999999999999;
+    bottom: 40px;
+    right: 20px;
+    cursor: pointer;
+    border-radius:100px !important;
+    background-color: transparent;
+}
+
+
+
+/* Agregar class .negativo a <section class="contacto"> para pasar Contacto a Negativo */
+
+section.contacto.negativo {
+    background: #202020;
+    h1,
+    h2 {
+        color: #fff;
+    }
+    p {
+        padding: 0;
+        color: #bcbcbc;
+        
+    }
+    .grid .cell.form {
+        input {
+            border-bottom: 1px solid #fff;
+            padding: 10px;
+        }
+        h2:before {
+            position: absolute;
+            top: 14px;
+            left: 0;
+            font-family: EllecktraIconos;
+            font-size: 16px;
+            content: "\F102";
+        }
+        textarea {
+            border: 1px solid #fff;
+        }
+        button {
+            color: #202020;
+            background: #fff;
+        }
+        button:disabled {
+            background: #eee;
+        }
+        .file {
+            border-bottom: 1px solid #fff;
+            background: #fff url(data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgNDQgNDQiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDQ0IDQ0OyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+PHBhdGggc3R5bGU9ImZpbGw6IzAwMDAwMCIgZD0iTTIxLjIsMTAuMmwtMy44LTMuOGMtMC41LTAuNS0xLjMtMC44LTItMC44SDIuOUMxLjMsNS41LDAsNi44LDAsOC40djI3LjNjMCwxLjYsMS4zLDIuOSwyLjksMi45aDM4LjNjMS42LDAsMi45LTEuMywyLjktMi45VjEzLjljMC0xLjYtMS4zLTIuOS0yLjktMi45SDIzLjJDMjIuNCwxMSwyMS43LDEwLjcsMjEuMiwxMC4yeiIvPjwvc3ZnPg==) no-repeat 2px 4px;
+            background-position: 7px 6px;
+            background-size: 24px 24px;
+            .label {
+                color: #777;
+            }
+        }
+    }
+}
+
+@media all and (max-width:1000px) {
+    section.contacto .grid .cell {
+        width: 33.33%;
+    }
+    section.contacto .grid .cell.form {
+        width: 100%;
+    }
+}
+
+@media all and (max-width:790px) {
+    section.contacto h1 {
+        font-size: 46px;
+    }
+}
+
+@media all and (max-width:510px) {
+    section.contacto h1 {
+        font-size: 36px;
+    }
+}
+
+@media all and (max-width:490px) {
+    section.contacto h2 {
+        font-size: 20px;
+    }
+}
+
+@media all and (max-width:400px) {
+    section.contacto p {
+        font-size: 10px;
+    }
+    section.contacto .grid .cell.form h2:before {
+        top: 7px;
+    }
+}

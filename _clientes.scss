@@ -1,0 +1,113 @@
+section.clientes {
+    position: relative;
+    z-index: 4;
+    width: 100%;
+    padding: 60px 0;
+    background: #fff;
+    h2 {
+        font-family: 'ProximaNovaExtraBold', sans-serif;
+        font-size: 120px;
+        font-weight: normal;
+        text-align: center;
+        color: #202020;
+        @media (max-width: 800px) {
+            font-size: 55px;
+            line-height: 60px;
+        }
+    }
+    .grid {
+        width: 100%;
+        min-width: 320px;
+        margin: 0 auto;
+        position: relative;
+        figure {
+            float: left;
+            width: 25%;
+            min-width: 100px;
+            text-align: center;
+            img {
+                width: 100%;
+                margin: 0 auto;
+            }
+        }
+        figcaption {
+            display: none;
+        }
+    }
+}
+
+#grillaclientes-mobile {
+    display: none;
+}
+
+.item01 {
+    animation: fadeIn 5s infinite;
+}
+
+.item02 {
+    animation: fadeOut 5s infinite;
+    position: absolute;
+    top: 0;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 1;
+    }
+    55% {
+        opacity: 0;
+    }
+    95% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+    }
+    55% {
+        opacity: 1;
+    }
+    95% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@media all and (max-width:950px) {
+    section.clientes .grid figure {
+        width: 33%;
+    }
+}
+
+@media all and (max-width:650px) {
+    section.clientes h1 {
+        font-size: 46px;
+    }
+    section.clientes .grid {
+        max-width: 585px;
+    }
+    section.clientes .grid figure {
+        width: 50%;
+    }
+    #grillaclientes {
+        display: none;
+    }
+    #grillaclientes-mobile {
+        display: block;
+    }
+}
+
+@media all and (max-width:350px) {}

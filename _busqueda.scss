@@ -1,0 +1,275 @@
+#busqueda{
+    background-color: #000;
+    width: 100%;
+    padding: 100px 0px;
+    color: #fff;
+    overflow: hidden;
+    text-align: center;
+    .section{
+        max-width: 100%;
+        margin: auto;
+        h1 {
+            font-family: "ProximaNovaBlack",sans-serif;
+            font-size: 5rem;
+            line-height: 100px;
+            text-align: center;
+            color: #fff;
+        }
+        h2 {
+            font-family: "ProximaNovaBlack",sans-serif;
+            font-size: 3rem;
+            line-height: 100px;
+            text-align: left;
+            color: #fff;
+            margin-left: 50px;
+            
+        
+            @media (max-width: 800px) {
+                font-size: 55px;
+                line-height: 60px;
+                margin: 20px auto;
+            }
+            &+.text {
+                font-size: 24px;
+                line-height: 40px;
+                max-width: 1140px;
+                font-family: "ProximaNova", sans-serif;
+                text-align: center;
+                margin: 0px auto;
+                padding: 20px 15px 35px;
+            }
+        }
+        h4 {
+            margin-top: 50px;
+            font-family: "ProximaNovaBlack", sans-serif;
+            font-size: 16px;
+            text-align: center;
+            color: #fff;
+            width: 250px;
+            margin: auto;
+            border: 2px solid #fff;
+            border-radius: 20px;
+            padding: 5px 10px;
+            text-transform: uppercase;
+            @media (max-width: 800px) {
+                font-size: 30px;
+            }
+        }
+        .grid,.container{
+            max-width: 800px;
+            margin: auto;
+            padding-bottom: 100px;
+            @media (max-width: 800px) {
+                max-width: 100%;
+            }
+        }
+        .row{
+            flex-direction: column;
+            color: #fff!important;
+            padding: 25px 60px;
+            .group{
+                display: inline-flex;
+                justify-content: start;
+                h3{
+                    font-family: "ProximaNovaBlack", sans-serif;
+                    font-size: 40px;
+                    text-align: center;
+                    color: #fff;
+                }
+                span{
+                    img{
+                        width: 30px;
+                        margin-right: 20px;
+                        margin-top: 6px;
+                    }
+                }
+            }
+            ul{
+                text-align: left;
+                max-width: 500px;
+                
+                li{ 
+                    list-style: none;
+                    font-size: 18px!important;
+                    text-indent:-5px; 
+                    margin-bottom: 1rem!important;
+                    &::before{ 
+                        content:"-"; 
+                        position:relative; 
+                        left:-5px;
+                    } 
+                }
+            }
+            p{
+                text-align: left;
+                font-size: 18px;
+                max-width: 500px;
+            }
+        }
+        .text{
+            background-color: #fff;
+            margin-top: 50px;
+            h2{
+                color: #000;
+                img{
+                    width: 25px;
+                    margin-right: 20px;
+                }
+            }
+            form{
+                background-color: #fff;
+                color: #fff;
+                padding: 0 50px;
+                label{
+                    width: 100%;
+                    font-size: 14px;
+                }
+                .form-group{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: left;
+                    align-items: start;
+                    width: 100%;
+                    &.line{
+                        display: inline-flex;
+                        flex-direction: row;
+                        &.full{
+                            width: 100%;
+                            @media (max-width: 1400px) {
+                                width: 100%;
+                            }
+                        }
+                        &.middle{
+                            width: 49%;
+                            @media (max-width: 1400px) {
+                                width: 100%;
+                            }
+                        }
+                        &.little{
+                            width: 31%;
+                            @media (max-width: 1400px) {
+                                width: 100%;
+                                &.mx-3{
+                                    margin-left: 0!important;
+                                    margin-right: 0!important;
+                                }
+                            }
+                           
+                        }
+                       
+                       /* width: 30%;*/
+                        label{
+                            width: 50%;
+                        }
+                        input{
+                            width: 100%;
+                        }
+                        select{
+                            border-radius: 20px;
+                            background-image: url("../../gfx/arrow-down.svg?v=2");
+                            background-repeat: no-repeat;
+                            background-position: right center;
+                            -webkit-appearance: none;
+                            background-size: contain;
+                            -moz-appearance: none;
+                            -o-appearance: none;
+                            appearance: none;
+                            width: 100%;
+                            border: 2px solid #000 !important;
+                            text-transform: uppercase;
+                            font-weight: bold;
+                            text-align: center;
+                            height: 30px;
+                        }
+                        select::-ms-expand {
+                            display: none; 
+                        }
+                        &.columns{
+                            flex-direction: column;
+                            label{
+                                width: 100%;
+                            }
+                        }
+                    }
+                    label{
+                        cursor: auto;
+                    }
+
+                    input{
+                        border-top: none;
+                        border-right: none;
+                        border-left: none;
+                        width: 100%;
+                    }
+                    #src-file1 {
+                        position: relative;
+                        display: inline-block;
+                        position: relative;
+                        display: inline-block;
+                        width: 150px;
+                        font-weight: bold;
+                        text-transform: uppercase;
+                        &:before {
+                            background-color: #000;
+                            color: white;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            border-radius: 3px;
+                            content: 'Seleccionar'; /* testo por defecto */
+                            position: absolute;
+                            left: 0;
+                            right: 0;
+                            top: 0;
+                            bottom: 0;
+                            border-radius: 20px;
+                          }
+                          input[type="file"] {
+                            opacity: 0;
+                            width: 15
+                            0px;
+                            height: 32px;
+                            display: inline-block;
+                          }
+                          &:before {
+                            content: 'Adjuntar CV';
+                          }
+                    }
+                    
+                     
+                }
+                button.btn{
+                    background-color: #000;
+                    color: #fff;
+                    border-radius: 20px;
+                    padding: 1px 10px;
+                    width: 200px;
+                    height: 40px;
+                    font-weight: bold;
+                    text-transform: uppercase;
+                    }
+                label{
+                    width: 100%;
+                    text-align: left;
+                }
+                p{
+                    text-transform: uppercase;
+                    font-weight: bold;
+                    font-size: 12px;
+                    text-align: left;
+                    color: #000;
+                }
+            }
+
+        }
+        @media (max-width: 800px) {
+            max-width: 100%;
+        }
+    }
+    .footer{
+        background: #000;
+        height: 50px;
+        padding: 0;
+        margin: 0;
+    }
+}

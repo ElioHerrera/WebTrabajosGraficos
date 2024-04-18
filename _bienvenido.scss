@@ -1,0 +1,645 @@
+#video-full {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    z-index: -100;
+    width: auto;
+    height: auto;
+    min-width: 100%;
+    min-height: 100%;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    background: url("../videos/juanra.jpg") no-repeat;
+    background-size: cover;
+}
+
+
+.iphone-detect #video-full {
+    display: none;
+}
+
+.iphone-detect .mobile-bg {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    background-image: url("../videos/juanra.jpg");
+    background-repeat: no-repeat;
+    background-position: 40% center;
+    background-size: cover;
+}
+
+.jquery-background-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: auto;
+    height: auto;
+    min-width: 100%;
+    min-height: 100%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+.jquery-background-video-wrapper {
+    position: relative;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.js .jquery-background-video {
+    -webkit-transition: opacity 300ms linear;
+    transition: opacity 300ms linear;
+    opacity: 0;
+}
+
+.js .jquery-background-video.is-visible {
+    opacity: 1;
+}
+
+.mobile-bg {
+    display: none;
+}
+
+.video-wrap {
+    width: 100%;
+    height: 100%;
+}
+
+body.initialized section.welcome .inner {
+    opacity: 1;
+}
+
+body.initialized section.welcome h1 {
+    right: 20px;
+}
+
+body.initialized section.welcome p .text1 {
+    top: 140px;
+}
+
+body.initialized section.welcome p .text2 {
+    top: 140px;
+}
+
+body.initialized section.welcome p .text3 {
+    top: 140px;
+}
+
+body.initialized section.welcome p .text4 {
+    top: 140px;
+}
+
+body.initialized section.welcome p .text5 {
+    top: 140px;
+}
+
+body.initialized section.welcome p {
+    left: 50px;
+}
+
+section.welcome .inner {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+    width: 0;
+    height: 0;
+    padding: 0;
+    -webkit-transition: opacity 1s ease;
+    transition: opacity 1s ease;
+    opacity: 0;
+}
+
+section.welcome .p1 {
+    -webkit-animation: fadeInUp 20s 0s infinite;
+    animation: fadeInUp 20s 0s infinite;
+}
+
+section.welcome .p2 {
+    -webkit-animation: fadeInUp 20s 4s infinite;
+    animation: fadeInUp 20s 4s infinite;
+}
+
+section.welcome .p3 {
+    -webkit-animation: fadeInUp 20s 8s infinite;
+    animation: fadeInUp 20s 8s infinite;
+}
+
+section.welcome .p4 {
+    -webkit-animation: fadeInUp 20s 12s infinite;
+    animation: fadeInUp 20s 12s infinite;
+}
+
+section.welcome .p5 {
+    -webkit-animation: fadeInUp 20s 16s infinite;
+    animation: fadeInUp 20s 16s infinite;
+}
+
+section.welcome .trama {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 8888;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .4) url("../videos/trama.png");
+}
+
+section.welcome .txt-wrap .parrafo-home {
+    position: absolute;
+    right: 0;
+    left: 0;
+    display: block;
+    padding-top: 10px;
+    padding-right: 30px;
+    padding-left: 30px;
+    margin: 0 auto;
+    font-family: "ProximaNova", sans-serif;
+    font-size: 24px;
+    line-height: 30px;
+    opacity: 0;
+    color: #fff;
+    text-shadow: 0 0 35px rgba(11, 11, 11, .55);
+}
+
+section.welcome .txt-wrap span.titulo-home {
+    font-family: "ProximaNovaExtraBold", sans-serif;
+    font-size: 120px;
+    line-height: 100px;
+    color: #fff;
+    text-shadow: 0 0 35px rgba(11, 11, 11, .55);
+}
+
+section.welcome .txt-wrap {
+    position: absolute;
+    position: absolute;
+    top: 0;
+    top: 45%;
+    left: 50%;
+    z-index: 9900 !important;
+    width: 100%;
+    height: auto;
+    max-width: 1170px;
+    padding-right: 30px;
+    padding-left: 30px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: left;
+}
+
+section.welcome h1 br {
+    visibility: hidden;
+}
+
+section.welcome h1 span {
+    display: none;
+}
+
+section.welcome h1 {
+    position: absolute;
+    top: -50px;
+    right: 350px;
+    width: 550px;
+    height: 140px;
+    font-family: "ProximaNovaExtraBold", sans-serif;
+    font-size: 70px;
+    font-weight: normal;
+    line-height: 70px;
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+    color: #202020;
+}
+
+section.welcome nav a span {
+    display: block;
+    width: 7px;
+    height: 7px;
+    border: 2px solid #fff;
+    border-radius: 10px;
+}
+
+section.welcome nav a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 11px;
+    height: 11px;
+    -webkit-transition: background .5s ease;
+    transition: background .5s ease;
+    border: 1px solid #aaa;
+    border-radius: 10px;
+    background: #fff;
+}
+
+section.welcome nav a.kf1 {
+    top: 13px;
+}
+
+section.welcome nav a.kf2 {
+    top: 38px;
+}
+
+section.welcome nav a.kf3 {
+    top: 63px;
+}
+
+section.welcome nav a.kf4 {
+    top: 88px;
+}
+
+section.welcome nav a.kf5 {
+    top: 113px;
+}
+
+section.welcome nav {
+    position: fixed;
+    top: 45%;
+    right: 30px;
+    width: 6px;
+    height: 140px;
+    border-right: 0 solid #aaa;
+}
+
+section.welcome p .text1 {
+    top: 50px;
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+    opacity: 0;
+}
+
+section.welcome p .text2 {
+    top: 50px;
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+    opacity: 0;
+}
+
+section.welcome p .text3 {
+    top: 50px;
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+    opacity: 0;
+}
+
+section.welcome p .text4 {
+    top: 50px;
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+    opacity: 0;
+}
+
+section.welcome p .text5 {
+    top: 50px;
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+    opacity: 0;
+}
+
+section.welcome p span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 550px;
+}
+
+section.welcome p {
+    position: absolute;
+    top: -50px;
+    left: 350px;
+    width: 550px;
+    height: 140px;
+    font-family: DroidSerifItalic;
+    font-size: 20px;
+    line-height: 24px;
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+}
+
+section.welcome {
+    position: relative;
+    height: 100vh;
+}
+
+section.welcome.kf1 nav a.kf1 {
+    background: #777;
+}
+
+section.welcome.kf1 p .text1 {
+    top: 50px !important;
+    opacity: 1;
+}
+
+section.welcome.kf2 nav a.kf2 {
+    background: #777;
+}
+
+section.welcome.kf2 p .text1 {
+    top: -30px !important;
+    opacity: 0;
+}
+
+section.welcome.kf2 p .text2 {
+    top: 50px !important;
+    opacity: 1;
+}
+
+section.welcome.kf3 nav a.kf3 {
+    background: #777;
+}
+
+section.welcome.kf3 p .text1 {
+    top: -30px !important;
+    opacity: 0;
+}
+
+section.welcome.kf3 p .text2 {
+    top: -30px !important;
+    opacity: 0;
+}
+
+section.welcome.kf3 p .text3 {
+    top: 50px !important;
+    opacity: 1;
+}
+
+section.welcome.kf4 nav a.kf4 {
+    background: #777;
+}
+
+section.welcome.kf4 p .text1 {
+    top: -30px !important;
+    opacity: 0;
+}
+
+section.welcome.kf4 p .text2 {
+    top: -30px !important;
+    opacity: 0;
+}
+
+section.welcome.kf4 p .text3 {
+    top: -30px !important;
+    opacity: 0;
+}
+
+section.welcome.kf4 p .text4 {
+    top: 50px !important;
+    opacity: 1;
+}
+
+section.welcome.kf5 nav a.kf5 {
+    background: #777;
+}
+
+section.welcome.kf5 p .text1 {
+    top: -30px !important;
+    opacity: 0;
+}
+
+section.welcome.kf5 p .text2 {
+    top: -30px !important;
+    opacity: 0;
+}
+
+section.welcome.kf5 p .text3 {
+    top: -30px !important;
+    opacity: 0;
+}
+
+section.welcome.kf5 p .text4 {
+    top: -30px !important;
+    opacity: 0;
+}
+
+section.welcome.kf5 p .text5 {
+    top: 35px !important;
+    opacity: 1;
+}
+
+.button-top {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    z-index: 19;
+    z-index: 1;
+    display: none;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+    background: transparent;
+}
+
+.button-top.show {
+    display: block;
+}
+
+.button-top:hover {
+    background: #202020;
+}
+
+.button-top:before {
+    position: absolute;
+    top: 7px;
+    width: 100%;
+    font-family: EllecktraIconos;
+    font-size: 26px;
+    content: "\F100";
+    text-align: center;
+    opacity: .5;
+    color: #ccc;
+}
+
+.button-top:hover:before {
+    opacity: 1;
+    color: #eee;
+}
+
+@-webkit-keyframes fadeInUp {
+    0% {
+        -webkit-transform: translate3d(0, 100%, 0);
+        transform: translate3d(0, 100%, 0);
+        opacity: 0;
+    }
+    5% {
+        -webkit-transform: none;
+        transform: none;
+        opacity: 1;
+    }
+    15% {
+        -webkit-transform: none;
+        transform: none;
+        opacity: 1;
+    }
+    20% {
+        -webkit-transform: translate3d(0, -100%, 0);
+        transform: translate3d(0, -100%, 0);
+        opacity: 0;
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        -webkit-transform: translate3d(0, 100%, 0);
+        transform: translate3d(0, 100%, 0);
+        opacity: 0;
+    }
+    5% {
+        -webkit-transform: none;
+        transform: none;
+        opacity: 1;
+    }
+    15% {
+        -webkit-transform: none;
+        transform: none;
+        opacity: 1;
+    }
+    20% {
+        -webkit-transform: translate3d(0, -100%, 0);
+        transform: translate3d(0, -100%, 0);
+        opacity: 0;
+    }
+}
+
+@media all and (max-width:1200px) {
+    body.initialized section.welcome p {
+        left: 0;
+    }
+    section.welcome h1 {
+        width: 425px;
+        height: 125px;
+        padding-top: 15px;
+        font-size: 54px;
+        line-height: 54px;
+    }
+    section.welcome p {
+        width: 450px;
+        font-size: 18px;
+    }
+}
+
+@media all and (max-width:950px) {
+    section.welcome h1 {
+        width: 350px;
+        height: 120px;
+        padding-top: 20px;
+        font-size: 43px;
+        line-height: 43px;
+    }
+    section.welcome p {
+        width: 325px;
+        font-size: 15px;
+    }
+}
+
+@media all and (max-width:790px) {
+    section.welcome .txt-wrap span.titulo-home {
+        font-size: 50px;
+        line-height: 55px;
+    }
+    body.initialized section.welcome h1 {
+        top: -75px;
+    }
+    body.initialized section.welcome p {
+        top: -25px;
+        left: -241px;
+    }
+    section.welcome h1 br {
+        display: none;
+    }
+    section.welcome h1 span {
+        display: inline;
+    }
+    section.welcome h1 {
+        top: -175px;
+        left: -241px;
+        width: 480px;
+        height: auto;
+        padding-top: 0;
+        font-size: 41px;
+        line-height: 41px;
+        text-align: center;
+    }
+    section.welcome p span {
+        width: 480px;
+    }
+    section.welcome p {
+        top: 100px;
+        left: -241px;
+        width: 480px;
+        font-size: 18px;
+        text-align: center;
+    }
+}
+
+@media all and (max-width:490px) {
+    body.initialized section.welcome h1 {
+        top: -75px;
+    }
+    body.initialized section.welcome p {
+        top: -25px;
+        left: -160px;
+    }
+    section.welcome h1 {
+        top: -175px;
+        left: -160px;
+        width: 320px;
+        font-size: 26px;
+        line-height: 30px;
+    }
+    section.welcome p span {
+        width: 320px;
+    }
+    section.welcome p {
+        left: -160px;
+        width: 320px;
+        font-size: 12px;
+        line-height: 18px;
+    }
+}
+
+@media all and (max-width:400px) {
+    .mobile-bg {
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        background-image: url("../videos/juanra.jpg");
+        background-repeat: no-repeat;
+        background-position: 40% center;
+        background-size: cover;
+    }
+    .scroll-down {
+        display: none;
+    }
+    header .inner {
+        //padding: 20px;
+    }
+    section.welcome .txt-wrap .parrafo-home {
+        padding-right: 20px;
+        padding-left: 20px;
+        font-family: "ProximaNova", sans-serif;
+        font-size: 24px;
+        line-height: 25px;
+    }
+    section.welcome .txt-wrap span.titulo-home {
+        font-size: 36px;
+        line-height: 38px;
+    }
+    section.welcome .txt-wrap {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+    section.welcome nav {
+        display: none;
+    }
+    
+    // video#video-full {
+    //     display: none;
+    // }
+}
